@@ -1,0 +1,208 @@
+import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(124, 65, 85);
+    color: #333;
+    font-family: Lato, sans-serif;
+}
+
+
+/* image */
+
+.img {
+    width: 500px;
+    height: 300px;
+    margin-left: 400px;
+}
+
+
+/* MAIN HEADING  */
+
+h1 {
+    font-size: 4rem;
+    font-weight: 50;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Condensed';
+}
+
+.container {
+    display: block;
+    width: 600px;
+    margin: 100px auto 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li * {
+    float: left;
+}
+
+li,
+h3 {
+    clear: both;
+    list-style: none;
+    color: black;
+    font-size: 30px;
+}
+
+input,
+button {
+    outline: none;
+}
+
+
+/* INPUT SECTION */
+
+#new-task {
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: white;
+    width: 400px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+}
+
+
+/* EDIT SECTION */
+
+.editbar {
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: white;
+    width: 400px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+}
+
+button:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+
+/* ADD BUTTON */
+
+.addButton {
+    height: 50px;
+    width: 100px;
+    border-radius: 30%;
+    outline: none;
+    border: none;
+    color: white;
+    margin: 0.25px;
+    font-weight: bold;
+    background-color: coral;
+    cursor: pointer;
+}
+
+
+/*DELETE BUTTON*/
+
+.delete {
+    height: 50px;
+    width: 80px;
+    border-radius: 30%;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    background: none;
+    outline: none;
+    color: red;
+    margin: 0 10;
+    background-color: rgb(20, 19, 19);
+    border: none;
+    cursor: pointer;
+}
+
+
+/*EDIT BUTTON */
+
+.edit {
+    height: 50px;
+    width: 80px;
+    border-radius: 30%;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    background: none;
+    outline: none;
+    color: lime;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* New Task */
+
+label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+}
+
+
+/* Task list */
+
+li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    color: white;
+}
+
+.checkbox {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+li>label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+}
+
+li>input[type="text"] {
+    width: 226px;
+}
+
+
+/* Completed */
+
+#completed-tasks label {
+    text-decoration: line-through;
+    color: white;
+}
+
+
+/* Edit Task */
+
+ul li input[type=text] {
+    display: none;
+}
+
+ul li.editMode input[type=text] {
+    display: block;
+}
+
+ul li.editMode label {
+    display: none;
+}
