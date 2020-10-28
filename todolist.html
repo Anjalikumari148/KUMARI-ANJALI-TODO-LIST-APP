@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Todo List</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="layout.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body>
+    <div class="container-fluid  p-0">
+        <div class="content ">
+            <div class="d-flex ">
+                <div class="d-flex flex-column">
+                    <img class="img" src="https://listproducer.com/wp-content/uploads/2015/02/023-001-ListPrdcr-GraphicR2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1><span class="heading">To do List</span></h1>
+    <div class="container">
+        <p>
+            <input id="new-task" type="text"><button class="addButton">Add</button>
+        </p>
+
+        <h3>Todo</h3>
+        <ul id="incomplete-tasks">
+            <li><input class="checkbox" type="checkbox">
+                <label>Read Novel</label><input class="editbar" type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button></li>
+            <li class="editMode">
+                <input class="checkbox" type="checkbox">
+                <label>Play Badminton</label>
+                <input class="editbar" type="text" value="Play Badminton">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button></li>
+
+        </ul>
+
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+            <li><input class="checkbox" type="checkbox" checked><label>Homework</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="todo.js"></script>
+
+</body>
+
+</html>
